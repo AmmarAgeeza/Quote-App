@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'core/utils/app_color.dart';
+import 'config/themes/app_theme.dart';
 import 'core/utils/app_strings.dart';
 
 class QuoteApp extends StatelessWidget {
@@ -11,10 +11,7 @@ class QuoteApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: AppStrings.appName,
-      theme: ThemeData(
-        primaryColor: AppColor.primary,
-        useMaterial3: true,
-      ),
+      theme: appTheme(),
       home: const QuoteApp(),
     );
   }
